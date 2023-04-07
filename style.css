@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html, 
+body {
+    background-color: #f1f1f1;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-block: 16px;
+}
+
+hr {
+    border: 1px solid #eee;
+}
+
+/* h4{
+    margin-bottom: 0;
+} */
+
+nav button {
+    border: none !important;
+}
+
+header h1{
+    font-size: 48px;
+    line-height: 2.0;
+}
+
+#hero .hero-content h2 {
+    font-size: 36px;
+    color: white;
+}
+
+#hero .hero-content p {
+    font-size: 64px;
+    line-height: 1.6;
+    color: white;
+}
+
+#hero .hero-content button {
+    font-size: 18px;
+}
+
+#hero .hero-content {
+    top: 50%;
+    left: 3rem;
+    transform: translateY(-50%);
+}
+
+.blog .comment h4 {
+    font-size: 20px;
+}
+
+.blog .comment span {
+    font-size: 15px;
+}
+
+.comment .col-2 p{
+    background-color: gray;
+}
+
+aside .sidebar-items img {
+    width: 100%;
+}
+
+aside .sidebar-items ul.popular-posts li {
+    margin: auto;
+    padding: 1rem;
+}
+
+aside .sidebar-items ul li p {
+    margin: 0;
+}
+
+aside .sidebar-items .advertise-body {
+    height: 200px;
+}
+
+aside .sidebar-items .background-ads{
+    background-color: #eee;
+    width: 100%;
+}
+
+aside .sidebar-items .follow-me-body i {
+    font-size: 30px;
+}
+
+.subscribe-btn {
+    width: 100%;
+    margin-top: 1rem;
+}

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>LANDING_PAGE_FASHION</title>
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- FONTS -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+       rel="stylesheet">
+</head>
+<body>
+    <!-- NAV -->
+   <nav class="navbar bg-dark d-none d-sm-flex">
+        <ul class="d-flex gap-3">
+            <li>
+                <button class="btn btn-outline-secondary">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn-outline-secondary text-light"><a href=""><i class="fa-brands fa-instagram"></i></a>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn-outline-secondary text-light"><a href=""><i class="fa-brands fa-snapchat"></i></a>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn-outline-secondary text-light"><a href=""><i class="fa-brands fa-discord"></i></a>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn-outline-secondary text-light"><a href=""><i class="fa-brands fa-twitter"></i></a>
+                </button>
+            </li>
+            <li>
+                <button class="btn btn-outline-secondary text-light"><a href=""><i class="fa-brands fa-linkedin"></i></a>
+                </button>
+            </li>
+
+        </ul>
+        <div class="search">
+            <button class="btn btn-outline-secondary text-light">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+       </div>
+   </nav>
+
+   <!-- HEADER -->
+   <header id="header" class="text-center px-5 py-3">
+        <h1 class="fw-bold">JANE BLOGLIFE</h1>
+        <h6 class="my-2 ">Welcome to the blog of <span class="bg-dark px-2 py-1 text-light">Jane's world</span></h6>
+   </header>
+
+   <!-- HERO -->
+   <div id="hero" class="position-relative">
+        <img src="./assets/hero.jpg" alt="hero-img" class="img-fluid">
+        <div class="position-absolute hero-content">
+            <h2 class="fw-normal">Jane's</h2>
+            <p class="text-uppercase fw-bold d-none d-sm-block">fashion blog</p>
+            <button type="button" class="btn btn-secondary text-uppercase opacity-75" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                subscribe
+            </button>
+        </div>
+    </div>
+
+    <!-- Subscribe Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">SUBSCRIBE</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+                <input type="text" class="form-control" placeholder="Enter e-mail" required>
+                <button class="btn btn-danger subscribe-btn" style="width: 100%">Subcribe</button>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- BLOG -->
+    <div class="container-fluid">
+        <div class="row my-3">
+            <div class="col-12 col-lg-8">
+                <div class="blog bg-light px-3 py-2">
+                    <h3 class="text-center fw-normal">TITLE HEADING</h3>
+                    <h5 class="text-center fw-normal my-2">Title description<span class="opacity-75">, May 2, 2016</span></h5>
+                    <img src="./assets/blog/girl_hat.jpg" alt="blog-1" class="img-fluid py-3" style="width: 100%">
+                    <p>
+                        <b>More Hats!</b> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                    </p>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <div class="blog-action d-flex justify-content-between my-3">
+                        <button class="like btn btn-outline-secondary">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <span class="text-dark">Like</span>
+                        </button>
+                        <button class="replies btn btn-dark">
+                            <span class="px-2">Replies</span>
+                            <span class="bg-light text-dark px-2">1</span>
+                        </button>
+                    </div>
+                    <hr class="my-5">
+                    <div class="row comment">
+                        <div class="col-12 col-sm-2">
+                            <img src="./assets/blog/avatar_smoke.jpg" alt="cmt-1" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-sm-10">
+                            <h4>George <span class="fw-normal text-secondary">May 3, 2015, 6:32 PM</span></h4>
+                            <p>Great blog post! Following</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog bg-light px-3 py-2 m-3">
+                    <h3 class="text-center fw-normal">TITLE HEADING</h3>
+                    <h5 class="text-center fw-normal my-2">Title description<span class="opacity-75">, May 2, 2016</span></h5>
+                    <img src="./assets/blog/girl_hat.jpg" alt="blog-1" class="img-fluid py-3" style="width: 100%">
+                    <p>
+                        <b>More Hats!</b> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                    </p>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <div class="blog-action d-flex justify-content-between my-3">
+                        <button class="like btn btn-outline-secondary">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <span class="text-dark">Like</span>
+                        </button>
+                        <button class="replies btn btn-dark">
+                            <span class="px-2">Replies</span>
+                            <span class="bg-light text-dark px-2">1</span>
+                        </button>
+                    </div>
+                    <hr class="my-5">
+                    <div class="row comment">
+                        <div class="col-12 col-sm-2">
+                            <img src="./assets/blog/avatar_smoke.jpg" alt="cmt-1" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-sm-10">
+                            <h4>George <span class="fw-normal text-secondary">May 3, 2015, 6:32 PM</span></h4>
+                            <p>Great blog post! Following</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog bg-light px-3 py-2 m-3">
+                    <h3 class="text-center fw-normal">TITLE HEADING</h3>
+                    <h5 class="text-center fw-normal my-2">Title description<span class="opacity-75">, May 2, 2016</span></h5>
+                    <img src="./assets/blog/girl_hat.jpg" alt="blog-1" class="img-fluid py-3" style="width: 100%">
+                    <p>
+                        <b>More Hats!</b> I am crazy about hats these days. Some text about this blog entry. Fashion fashion and mauris neque quam, fermentum ut nisl vitae, convallis maximus nisl. Sed mattis nunc id lorem euismod placerat. Vivamus porttitor magna enim, ac accumsan tortor cursus at. Phasellus sed ultricies mi non congue ullam corper. Praesent tincidunt sedtellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.
+                    </p>
+                    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                    <div class="blog-action d-flex justify-content-between my-3">
+                        <button class="like btn btn-outline-secondary">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <span class="text-dark">Like</span>
+                        </button>
+                        <button class="replies btn btn-dark">
+                            <span class="px-2">Replies</span>
+                            <span class="bg-light text-dark px-2">1</span>
+                        </button>
+                    </div>
+                    <hr class="my-5">
+                    <div class="row comment">
+                        <div class="col-12 col-sm-2">
+                            <img src="./assets/blog/avatar_smoke.jpg" alt="cmt-1" class="img-fluid">
+                        </div>
+                        <div class="col-12 col-sm-10">
+                            <h4>George <span class="fw-normal text-secondary">May 3, 2015, 6:32 PM</span></h4>
+                            <p>Great blog post! Following</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-4 position-relative">
+                <aside class="m-3">
+                    <!-- My name -->
+                    <div class="sidebar-items">
+                        <img src="./assets/blog/avatar_girl2.jpg" alt="blog-2">
+                        <div class="text bg-dark px-3">
+                            <h4 class="text-light py-2 mb-0">My Name</h4>
+                            <p class="text-light py-2 my-0">Just me, myself and I, exploring the universe of uknownment. I have a heart of love and a interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.</p>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <!-- Popular posts --> 
+                    <div class="sidebar-items">
+                        <h4 class="bg-dark p-3 text-light mb-0">Popular Post</h4>
+                        <ul class="popular-posts bg-light">
+                            <li class="row border-bottom">
+                                <div class="col-3">
+                                    <img src="./assets/blog/avatar_smoke.jpg" alt="popular-1">
+                                </div>
+                                <div class="col-6">
+                                    <h5>Denim</h5>
+                                    <p>Sed mattis nunc</p>
+                                </div>
+                            </li>
+                            <li class="row border-bottom">
+                                <div class="col-3">
+                                    <img src="./assets/blog/avatar_smoke.jpg" alt="popular-1">
+                                </div>
+                                <div class="col-6">
+                                    <h5>Denim</h5>
+                                    <p>Sed mattis nunc</p>
+                                </div>
+                            </li>
+                            <li class="row border-bottom">
+                                <div class="col-3">
+                                    <img src="./assets/blog/avatar_smoke.jpg" alt="popular-1">
+                                </div>
+                                <div class="col-6">
+                                    <h5>Denim</h5>
+                                    <p>Sed mattis nunc</p>
+                                </div>
+                            </li>
+                            <li class="row border-bottom">
+                                <div class="col-3">
+                                    <img src="./assets/blog/avatar_smoke.jpg" alt="popular-1">
+                                </div>
+                                <div class="col-6">
+                                    <h5>Denim</h5>
+                                    <p>Sed mattis nunc</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <!-- Advertise -->
+                    <div class="sidebar-items">
+                        <h4 class="bg-dark p-3 text-light m-0">Advertise</h4>
+                        <div class="advertise-body bg-light d-flex p-3">
+                            <span class="background-ads d-flex align-items-center justify-content-center">Your AD Here</span>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <!-- Tags -->
+                    <div class="sidebar-items">
+                        <h4 class="bg-dark p-3 text-light m-0">Tags</h4>
+                        <div class="tag-body bg-white">
+                            <span class="d-inline-block p-2 mb-3 bg-dark text-light">Fashion</span>
+                            <span class="d-inline-block p-2 mb-3">New York</span>
+                            <span class="d-inline-block p-2 mb-3">London</span>
+                            <span class="d-inline-block p-2 mb-3">Hats</span>
+                            <span class="d-inline-block p-2 mb-3">Norway</span>
+                            <span class="d-inline-block p-2 mb-3">Sweaters</span>
+                            <span class="d-inline-block p-2 mb-3">Ideas</span>
+                            <span class="d-inline-block p-2 mb-3">Deals</span>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <!-- Inspiration -->
+                    <div class="sidebar-items">
+                        <h4 class="bg-dark p-3 text-light m-0">Inspiration</h4>
+                        <div class="inspiration-body bg-white container-fluid py-3">
+                            <div class="row">
+                                <div class="col-6 mb-3">
+                                    <img src="./assets/blog/man_hat.jpg" alt="inspiration-1">
+                                </div>
+                                <div class="col-6 mb-3">
+                                    <img src="./assets/blog/man_hat.jpg" alt="inspiration-2">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-6">
+                                    <img src="./assets/blog/man_hat.jpg" alt="inspiration-3">
+                                </div>
+                                <div class="col-6">
+                                    <img src="./assets/blog/man_hat.jpg" alt="inspiration-4">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <!-- Follow me -->
+                    <div class="sidebar-items">
+                        <h4 class="bg-dark p-3 text-light m-0">Follow Me</h4>
+                        <div class="follow-me-body bg-white">
+                            <ul class="d-flex gap-3 p-3">
+                                <li>
+                                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa-brands fa-snapchat"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa-brands fa-discord"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                </li>
+                                <li>
+                                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                                </li>
+                    
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <!-- Subscribe -->
+                    <div class="sidebar-items">
+                        <h4 class="bg-dark p-3 text-light">Subscribe</h4>
+                        <div class="subscribe-body bg-white p-3">
+                            <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+                            <input type="text" class="form-control" placeholder="Enter e-mail" required>
+                            <button class="subscribe-btn btn btn-danger">Subcribe</button>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="bg-secondary p-5">
+        <button class="btn btn-dark">
+            <a href="#" class="text-light text-decoration-none">
+                <i class="fa-solid fa-arrow-up"></i>
+                To the top
+            </a>
+        </button>
+        <p class="m-0 pt-5">
+            Powered by <a href="">w3.css</a>
+        </p>
+    </footer>
+</body>
+
+<!-- JAVASCRIPT -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="./script.js"></script>
+
+</html>
